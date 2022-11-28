@@ -9,8 +9,10 @@ app.register_blueprint(airlines)
 app.register_blueprint(airports)
 app.register_blueprint(flights)
 
+
 @app.route("/api/version")
 def version():
     return "1.0"
+
 
 app.run(port=8080)
